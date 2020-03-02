@@ -2,7 +2,7 @@ const express = require('express');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const db = require('../data/helper');
-const restricted = require('../auth/restricted');
+const restricted = require('../auth/restriction');
 
 const router = express.Router();
 
