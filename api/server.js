@@ -6,7 +6,7 @@ const logger = require("../middleware/logger");
 
 //routers 
 
-const usersRouter = require("../users/user-router");
+const userRoutes = require("../users/user-router");
 
 const strainRoutes = require('./strains/strain-router');
 
