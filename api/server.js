@@ -7,8 +7,8 @@ const logger = require("../middleware/logger");
 //routers 
 
 const usersRouter = require("../users/user-router");
-const loginRouter = require("../auth/login-router.js");
-const registerRouter = require("../auth/register-router.js");
+
+const strainRoutes = require('./strains/strain-router');
 
 // const authenticate = require
 
@@ -19,9 +19,9 @@ server.use(cors());
 server.use(express.json());
 server.use(logger)
 
-server.use("/api/login", loginRouter);
-server.use("/api/register", registerRouter);
-server.use("/api/users", usersRouter);
+server.use('/api/users', userRoutes);
+server.use('/api/strains', strainRoutes);
+
 
 
 server.get("/",  (req, res) => {
@@ -29,7 +29,5 @@ server.get("/",  (req, res) => {
 })
 
 
-// server.use("/api/auth", authRouter)
-// server.use("/api/strains", authenticate, strainsRouter)
 
 module.exports = server 
