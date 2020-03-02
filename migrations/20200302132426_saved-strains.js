@@ -5,7 +5,7 @@ exports.up = function(knex) {
     saved_strains.integer('user')
         .unsigned()
         .notNullable()
-        .references('id')
+        .references('user_id')
         .inTable('users');
     saved_strains.integer('strain')
         .unsigned()
