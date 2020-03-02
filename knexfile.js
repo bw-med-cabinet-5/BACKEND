@@ -6,7 +6,7 @@ module.exports = {
     client: 'pg',
     connection: 'postgres://localhost/med-cabinetDB',
     migrations: {
-      directory: './data/migrations',
+      directory: './migrations',
     },
     seeds: {
       directory: './data/seeds',
@@ -21,7 +21,7 @@ module.exports = {
     client: 'pg',
     connection: process.env.DATABASE_URL,
     migrations: {
-      directory: './data/migrations',
+      directory: './migrations',
     },
     pool: {
       min: 2,
