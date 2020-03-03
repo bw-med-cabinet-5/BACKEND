@@ -8,8 +8,7 @@ const logger = require("../middleware/logger");
 
 const userRoutes = require("../users/user-router");
 
-const strainRoutes = require('./strains/strain-router');
-
+const strainRoutes = require("../strains/strains-router");
 // const authenticate = require
 
 const server = express();
