@@ -14,44 +14,44 @@ module.exports = {
 }
 
 function insertUser(user) {
-    return db('Users')
+    return db('users')
         .insert(user);
 }
 
 function getUsers() {
-    return db('Users');
+    return db('users');
 }
 
 function findUserByEmail(email) {
-    return db('Users')
+    return db('users')
         .where('email', email)
         .first();
 }
 
 function findUserByID(id) {
-    return db('Users')
+    return db('users')
         .where('user_id', id)
         .first();
 }
 
 function updateUser(id, updateUser) {
-    return db('Users')
+    return db('users')
         .where('user_id', id)
         .update(updateUser)
 }
 
 function getStrains() {
-    return db('Strains');
+    return db('strains');
 }
 
 function findStrain(id) {
-    return db('Strains')
+    return db('strains')
         .where('strain_id', id)
         .first();
 }
 
 function saveStrain(userID, strainID) {
-    return db('Saved_Strains')
+    return db('saved_strains')
         .insert({
             user: userID,
             strain: strainID
@@ -60,13 +60,13 @@ function saveStrain(userID, strainID) {
 
 function getSavedStrains(userID) {
     return db.select('strain_id', 'strain_name', 'strain_type', 'strain_rating', 'strain_description', 'strain_positive_effect', 'strain_negative_effect', 'strain_medical_effect', 'strain_flavors')
-        .from('Strains')
-        .join('Saved_Strains', 'Strains.strain_id', 'Saved_Strains.strain')
+        .from('strains')
+        .join('saved_strains', 'strains.strain_id', 'saved_strains.strain')
         .where('user', userID);
 }
 
 function removeSavedStrain(userID, strainID) {
-    return db('Saved_Strains')
+    return db('saved_strains')
         .where('user', userID)
         .where('strain', strainID)
         .del()

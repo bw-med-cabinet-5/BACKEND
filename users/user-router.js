@@ -1,4 +1,4 @@
-const router = require("express");
+const express = require("express");
 const db = require('../data/helper');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
@@ -10,12 +10,13 @@ const router = express.Router();
 router.post('/register', (req, res) => {
     let user = req.body;
 
-    const hash = bcrypt.hashSync(user.password, 12);
+    const hash = bcrypt.hashSync(user.password, 5);
     user.password = hash;
 
     db.insertUser(user)
         .then(saved => res.status(201).json(saved))
         .catch(error => res.status(500).json(error))
+    
 });
 
 router.post('/login', (req, res) => {
