@@ -1,7 +1,5 @@
 const express = require('express');
-const jwt = require('jsonwebtoken');
-const bcrypt = require('bcryptjs');
-const db = require('../data/helper');
+const db = require('../data/helper').default;
 const restricted = require('../auth/restriction');
 
 const router = express.Router();
