@@ -1,5 +1,5 @@
 const express = require('express');
-const db = require('../data/helper').default;
+const db = require('../data/helper');
 const restricted = require('../auth/restriction');
 
 const router = express.Router();
