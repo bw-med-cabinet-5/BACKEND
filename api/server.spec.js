@@ -2,6 +2,16 @@ const request = require("supertest");
 
 const server = require("./server.js");
 
+const db = require("../data/dbConfig");
+
+const restricted = require("../auth/restricted");
+
+// beforeEach(async () => {
+//     return await db.migrate.rollback()
+//         .then(() => db.migrate.latest())
+//         .then(() => db.seed.run());
+// });
+
 it("should set db environment to testing", function() {
     expect(process.env.DB_ENV).toBe("testing");
   });
