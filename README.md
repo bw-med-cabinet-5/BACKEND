@@ -15,6 +15,7 @@ Heroku- "https://med-cabinet-production.herokuapp.com/"
 |DELETE         | /api/users/:id/strains | Deletes a saved strain|
 |GET            | /api/strains            | Gets list of strains|
 | GET            | /api/strains/:id       |Gets a specific strain by id |
+| PUT        |  /api/users/:id/email    | updates users email|
 ### To Register
 Select "POST" as the request.
  The JSON format should look similar to the following -
