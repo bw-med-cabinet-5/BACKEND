@@ -8,11 +8,11 @@ exports.up = function(knex) {
         strains.string('race')
             .notNullable();
         strains.text('description');
-        strains.string('positive');
-        strains.string('negative');
-        strains.string('medical');
-        strains.string('flavors');
-        strains.string('Combined');
+        strains.text('positive');
+        strains.text('negative');
+        strains.text('medical');
+        strains.text('flavors');
+        strains.text('Combined');
     
     })
     
