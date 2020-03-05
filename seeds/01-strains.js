@@ -16,17 +16,17 @@ exports.seed = function(knex) {
           "description": "'Afpak, named for its direct Afghani and Pakistani landrace heritage, is a beautiful indica-dominant hybrid with light green and deep bluish purple leaves. The taste and aroma are floral with a touch of lemon, making the inhale light and smooth. Its effects start in the stomach by activating the appetite. There is also a potent relaxation that starts in the head and face, and gradually sinks down into the body. Enjoy this strain if you’re suffering from stress, mild physical discomfort, or having difficulty eating. \\xa0'",
           "Combined": "'Earthy', 'Chemical', 'Pine','Relaxed', 'Hungry', 'Happy', 'Sleepy','Dizzy','Depression', 'Insomnia', 'Pain', 'Stress', 'Lack of Appetite','Afpak, named for its direct Afghani and Pakistani landrace heritage, is a beautiful indica-dominant hybrid with light green and deep bluish purple leaves. The taste and aroma are floral with a touch of lemon, making the inhale light and smooth. Its effects start in the stomach by activating the appetite. There is also a potent relaxation that starts in the head and face, and gradually sinks down into the body. Enjoy this strain if you’re suffering from stress, mild physical discomfort, or having difficulty eating. \\xa0'"
         },
-//         {
-//           "strain_id": 2,
-//           "name": "African",
-//           "race": "sativa",
-//           "flavors": "['Spicy/Herbal', 'Pungent', 'Earthy']",
-//           "positive": "['Euphoric', 'Happy', 'Creative', 'Energetic', 'Talkative']",
-//           "negative": "['Dry Mouth']",
-//           "medical": "['Depression', 'Pain', 'Stress', 'Lack of Appetite', 'Nausea', 'Headache']",
-//           "description": "[\"African refers to\\xa0the indigenous varieties of cannabis (or\\xa0landraces) that grow natively in this region of the world. Because of this region's latitude and climate, these native landrace strains tend to be\\xa0sativa\\xa0in structure and effect.\"]",
-//           "Combined": "['Spicy/Herbal', 'Pungent', 'Earthy'],['Euphoric', 'Happy', 'Creative', 'Energetic', 'Talkative'],['Dry Mouth'],['Depression', 'Pain', 'Stress', 'Lack of Appetite', 'Nausea', 'Headache'],[\"African refers to\\xa0the indigenous varieties of cannabis (or\\xa0landraces) that grow natively in this region of the world. Because of this region's latitude and climate, these native landrace strains tend to be\\xa0sativa\\xa0in structure and effect.\"]"
-//         },
+        {
+          "strain_id": 2,
+          "name": "African",
+          "race": "sativa",
+          "flavors": "['Spicy/Herbal', 'Pungent', 'Earthy']",
+          "positive": "['Euphoric', 'Happy', 'Creative', 'Energetic', 'Talkative']",
+          "negative": "['Dry Mouth']",
+          "medical": "['Depression', 'Pain', 'Stress', 'Lack of Appetite', 'Nausea', 'Headache']",
+          "description": "[\"African refers to\\xa0the indigenous varieties of cannabis (or\\xa0landraces) that grow natively in this region of the world. Because of this region's latitude and climate, these native landrace strains tend to be\\xa0sativa\\xa0in structure and effect.\"]",
+          "Combined": "['Spicy/Herbal', 'Pungent', 'Earthy'],['Euphoric', 'Happy', 'Creative', 'Energetic', 'Talkative'],['Dry Mouth'],['Depression', 'Pain', 'Stress', 'Lack of Appetite', 'Nausea', 'Headache'],[\"African refers to\\xa0the indigenous varieties of cannabis (or\\xa0landraces) that grow natively in this region of the world. Because of this region's latitude and climate, these native landrace strains tend to be\\xa0sativa\\xa0in structure and effect.\"]"
+        },
 //         {
 //           "strain_id": 3,
 //           "name": "Afternoon Delight",
