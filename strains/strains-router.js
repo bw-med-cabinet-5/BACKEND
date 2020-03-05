@@ -7,16 +7,12 @@ const router = express.Router();
 router.get('/', restricted, (req, res) => {
     db.getStrains()
         .then(strains => {
-            const refractored = strains.map(strain => {
-                return {
-                    ...strain,
-                    strain_effects: strain.strain_effects.split(','),
-                    strain_flavors: strain.strain_flavors.split(',')
-                }
-            });
-            res.send(refractored);
+                res.json(strains)
         });
+        
+            
 });
+
 
 router.get('/:id', restricted, (req, res) => {
     const id = req.params.id;
