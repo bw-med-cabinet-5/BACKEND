@@ -6,7 +6,7 @@ exports.seed = function(knex) {
       // Inserts seed entries
       return knex('strains').insert([
         { 
-          user_id:1,
+          
           strain_id: 1,
           name: "Afpak",
           race: "hybrid",
