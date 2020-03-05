@@ -9,7 +9,7 @@ module.exports = {
       directory: './migrations',
     },
     seeds: {
-      directory: './data/seeds',
+      directory: './seeds',
     },
     pool: {
       min: 2,
