@@ -6,12 +6,16 @@ exports.up = function(knex) {
         .unsigned()
         .notNullable()
         .references('user_id')
-        .inTable('users');
+        .inTable('users')
+        .onDelete("CASCADE")
+        .onUpdate("CASCADE");
     saved_strains.integer('strain')
         .unsigned()
         .notNullable()
         .references('strain_id')
-        .inTable('strains');
+        .inTable('strains')
+        .onDelete("CASCADE")
+        .onUpdate("CASCADE");
     })
 };
 
