@@ -59,7 +59,7 @@ function saveStrain(userID, strainID) {
 }
 
 function getSavedStrains(userID) {
-    return db.select('strain_id', 'strain_name', 'strain_type', 'strain_rating', 'strain_description', 'strain_positive_effect', 'strain_negative_effect', 'strain_medical_effect', 'strain_flavors')
+    return db.select('strain_id', 'name', 'race', 'description', 'positive', 'negative', 'medical', 'flavors')
         .from('strains')
         .join('saved_strains', 'strains.strain_id', 'saved_strains.strain')
         .where('user', userID);

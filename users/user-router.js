@@ -46,6 +46,7 @@ router.post('/login', (req, res) => {
 
 router.put('/:id/email', restricted, (req, res) => {
     const id = req.params.id;
+    console.log("this is id", id)
 
     if(req.body.email) {
         db.findUserByID(id)
