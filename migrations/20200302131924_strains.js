@@ -12,6 +12,7 @@ exports.up = function(knex) {
         strains.string('negative');
         strains.string('medical');
         strains.string('flavors');
+        strains.string('Combined');
     
     })
     
